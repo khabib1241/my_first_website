@@ -1,0 +1,245 @@
+/* styles.css */
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4895ef;
+    --text-color: #2b2d42;
+    --background-color: #f8f9fa;
+    --card-color: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.profile-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-card {
+    background-color: var(--card-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.food-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.hobbies-list li {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.hobbies-list li:hover {
+    transform: translateY(-3px);
+}
+
+.emoji {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--text-color);
+    color: white;
+}
+
+/* Dark mode */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #f8f9fa;
+    --card-color: #1e1e1e;
+}
+
+/* Large text mode */
+body.large-text {
+    font-size: 1.1rem;
+}
+
+body.large-text h1 {
+    font-size: 2.8rem;
+}
+
+body.large-text h2 {
+    font-size: 2rem;
+}
+
+body.background-1 {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+body.background-2 {
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+body.background-3 {
+    background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.background-4 {
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+}
+
+body.background-5 {
+    background-color: #e0f7fa;
+}
+/* Contact Section Styles */
+.contact-section {
+    margin-top: 3rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0;
+}
+
+.contact-icon {
+    font-size: 1.3rem;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-info a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4895ef;
+    --text-color: #2b2d42;
+    --background-color: #f8f9fa;
+    --card-color: #ffffff;
+}
+
+/* Background Themes */
+body.background-1 { background: #f8f9fa; } /* Default */
+body.background-2 { background: linear-gradient(135deg, #000000, #2b2b2b); color: white; }
+body.background-3 { background: linear-gradient(135deg, #3a0000, #5a0000); color: white; }
+body.background-4 { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: white; }
+body.background-5 { background: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=1350') center/cover fixed; }
+body.background-6 { background: linear-gradient(135deg, #1e0000, #3d0000); color: white; }
+
+/* Dark Red Theme */
+body.dark-red-theme {
+    --primary-color: #d00000;
+    --secondary-color: #9d0208;
+    --accent-color: #dc2f02;
+    --text-color: #ffffff;
+    --background-color: #370404;
+    --card-color: #5a0000;
+}
+
+/* Black Theme */
+body.black-theme {
+    --primary-color: #1a1a1a;
+    --secondary-color: #000000;
+    --accent-color: #333333;
+    --text-color: #ffffff;
+    --background-color: #121212;
+    --card-color: #242424;
+}
+
+/* Update dark mode to use variables */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #f8f9fa;
+    --card-color: #1e1e1e;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khattab's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <h1>Hello, I'm Khattab!</h1>
+            <p class="tagline">Computer Science Enthusiast & Sports Lover</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>About Me</h2>
+            <div class="content-card">
+                <p>I'm passionate about technology and great food! When I'm not coding, you'll find me enjoying delicious chicken dishes or exploring new recipes. The best part of chicken is that it s cruchy and at the same time its moist. So call me if u want to have a quick coffee, cya!</p>
+                <div class="food-image">
+                    <img src="https://twoplaidaprons.com/wp-content/uploads/2023/02/Korean-fried-chicken-wings-on-a-plate-thumbnail-shot.jpg" alt="Delicious chicken wings">
+                </div>
+            </div>
+        </section>
+
+        <section class="hobbies-section">
+            <h2>My Hobbies</h2>
+            <div class="content-card">
+                <ul class="hobbies-list">
+                    <li><span class="emoji">⚽</span> Football</li>
+                    <li><span class="emoji">🏀</span> Basketball</li>
+                    <li><span class="emoji">🏊</span> Swimming</li>
+                    <li><span class="emoji">💻</span> Coding</li>
+                    <li><span class="emoji">🍗</span> Cooking</li>
+                </ul>
+            </div>
+        </section>
+                <!-- Add this Contact Me section right before the closing </main> tag -->
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="content-card">
+                <div class="contact-info">
+                    <p><span class="contact-icon">📱</span> Phone: <a href="tel:+966559432747">055-943-2747</a></p>
+                    <p><span class="contact-icon">✉️</span> Email: <a href="mailto:koalkhudairi2028@stu.kfs.sch.sa">koalkhudairi2028@stu.kfs.sch.sa</a></p>
+                </div>
+                <div class="controls">
+    <button id="changeColorBtn">Change Theme Color</button>
+    <button id="fontSizeBtn">Toggle Font Size</button>
+    <button id="changeBgBtn">Change Background</button>
+    <button id="darkModeBtn">Dark Mode</button> <!-- New button -->
+</div>
+            </div>
+        </section>
+    </main> <!-- This is the existing closing tag - your contact section goes above it -->
+    </main>
+    <footer>
+        <p>© <span id="year"></span> Khattab's Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
